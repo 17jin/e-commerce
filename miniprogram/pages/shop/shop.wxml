@@ -1,0 +1,59 @@
+<image class="back" src="image/background.png"></image>
+<!--<view class="header">
+  <label class="share_btn" bindtap="btn_share">分享</label>
+  <label class="edit_btn" bindtap="btn_edit">编辑商品</label>
+</view>-->
+<view wx:if="{{hasList}}">
+  <view class="edit">
+    <label class="share_btn" bindtap="btn_share">分享</label>
+    <label class="edit_btn" bindtap="btn_edit">{{edit_name}}</label>
+  </view>
+  <view class="list" wx:for="{{list}}" wx:key="{{index}}">
+    <image class="dele_edit" bindtap="deletes" data-index='{{index}}' style="display:{{edit_show}}" src="image/delete.png"></image>
+    <image wx:if="{{item.selected}}" data-index='{{index}}' class="radio_chek1" bindtap="selectList" src='image/radio_selected.jpg'></image>
+    <!--选中圆圈的图标-->
+    <image wx:else src='image/radio_none.jpg' class="radio_chek1" data-index="{{index}}" bindtap="selectList"></image>
+
+    <image wx:if="{{item.selected}}" data-index='{{index}}' class="radio_chek" bindtap="selectList" src='image/radio_selected.jpg'></image>
+    <!--选中圆圈的图标-->
+    <image wx:else src='image/radio_none.jpg' class="radio_chek" data-index="{{index}}" bindtap="selectList"></image>
+    <!--未选中圆圈的图标-->
+    <!--列表标题-->
+    <!--<view class="big_name">{{item.big}}</view>-->
+    <text class="big_name">{{item.big}}</text>
+    <image class="list_img" src="{{item.image}}"></image>
+    <text class="list_name">{{item.title}}</text>
+    <view class="black"></view>
+    <text class="cart_g_name">{{item.pro_name}}</text>
+    <!--收藏
+    <label class="collert" bindtap="btn_collert">
+      <image class="collert_img" src="image/collert.png"></image>收藏</label>-->
+    <!--价格-->
+    <text class="list_price">￥{{item.price}}</text>
+    <!--商品数量加减 -->
+    <view style="display:{{show_edit}}">
+      <view class="carts-num">
+        <!--减按钮-->
+        <label class="minus" bindtap="btn_minus" data-obj="{{obj}}" data-index="{{index}}">-</label>
+        <label class="view_text_center" bindtap="input_num" data-index="{{index}}"> {{item.num}} </label>
+        <label class="plus" bindtap="btn_add" data-index="{{index}}">+</label>
+      </view>
+     
+    </view>
+  </view>
+  <view class="cont_bot">
+    <image wx:if="{{selectAllStatus}}" class="total-select" bindtap="selectAll" src="image/radio_selected.jpg"></image>
+    <image wx:else class="total-select" bingtap="selectAll" src="image/radio_none.jpg"></image>
+    <text class="sel_count_name">全选</text>
+ 
+    <label class="count_price">总计：<text class="topri">￥{{totalPrice}}</text>
+    </label>
+    <!--提交订单-->
+    <label class="submit" bingtap="btn_order">去结算</label>
+  </view>
+</view>
+<view wx:else>
+  <view class="liat_none">购物车是空的哦~</view>
+</view>
+<view class="joke">
+</view>

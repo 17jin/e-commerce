@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index1/index1",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/my/my",
+    "pages/shop/shop"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "真质康",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index1/index1",
+      "text": "首页",
+      "iconPath": "template/image/index0.png",
+      "selectedIconPath": "template/image/indexselected.png"
+    },
+    {
+      "pagePath": "pages/shop/shop",
+      "text": "购物车",
+      "iconPath": "template/image/shop0.png",
+      "selectedIconPath": "template/image/shop1.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "template/image/my0.png",
+      "selectedIconPath": "template/image/my0.png"
+    }],
+    "backgroundColor": "#eaedf6",
+    "selectedColor": "#407ce3"
+  }
+}

@@ -1,0 +1,24 @@
+<image src="image/background.png" class="back"></image>
+<view class="top">
+  <input class="top-search" type='text' placeholder='白大褂' placeholder-class="inputp" placeholder-style='color:#a0a1a1;font-size:13px;' bindinput='inputBind' value='{{inputValue}}' bindconfirm='query' confirm-type="search"></input>
+  <image src='../../template/image/search.png' bindtap='query'></image>
+</view>
+<view class="text">
+  <text class="textstyle">最热</text>
+  <text class="textstyle">最新</text>
+  <text class="textstyle">评价最好</text>
+  <text class="textstyle">销售最高</text>
+</view>
+
+<view class="list">
+  
+    <view class="path" wx:for="{{path}}" wx:key="{{index}}">
+    <navigator url="../detail/detail">
+      <image class="background" src="image/kongbai.jpg"></image>
+      <image class="list_img" src="{{item.image}}"></image>
+      <text class="list_name">{{item.title}}</text>
+      <text class="list_price">￥{{item.price}}</text>
+        </navigator>
+    </view>
+
+</view>

@@ -1,0 +1,114 @@
+<view class="index-content">
+  <image class="back" src="image/background.png"></image>
+  <view class="top">
+    <view class="top-left">
+      <image class="leftimage" style="width:35px;height:35px;" mode="aspectFit" src="image/indextop.png"></image>
+      <text>分类</text>
+    </view>
+    <view class="top-right">
+    <navigator url="../purchase/purchase">
+      <input class="top-search" type='text' placeholder='白大褂' placeholder-class="inputp" placeholder-style='color:#a0a1a1;font-size:13px;' bindinput='inputBind' value='{{inputValue}}' bindconfirm='goSearch' confirm-type="search"></input></navigator>
+      <image src='../../template/image/search.png' bindtap='query'></image>
+    </view>
+  </view>
+  <view class="middle">
+    <view class="mid-health">
+      <image src="../../template/image/health.png"></image>
+    </view>
+
+  </view>
+  <view class="commodity">
+    
+      <view class="section">
+        <view class="section-left">
+          <image src="../../template/image/index111.png"></image>
+          <text>医用服装</text>
+        </view>
+        <view class="section-right">
+          <text bindtap="tiao_btn" id="1">白大褂女士</text>
+          <text id="1">白大褂男士</text>
+          <text id="2">手术衣</text>
+          <text id="3">\n护士服女士</text>
+          <text id="4">护士服男士</text>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="section-left">
+          <image src="../../template/image/index2.png"></image>
+          <text>医疗用品</text>
+        </view>
+        <view class="section-right">
+          <text id="6">急救箱</text>
+          <text id="7">医疗箱</text>
+          <text id="8">医用口罩</text>
+          <text id="9">医用棉签</text>
+
+          <text id="10">\n碘酒</text>
+          <text id="11">脱脂纱布</text>
+          <text id="12">创可贴</text>
+          <text id="13">绷带</text>
+
+          <text id="14">\n防霾口罩</text>
+          <text id="15">灭菌橡胶手套</text>
+          <text id="16">体温计</text>
+        </view>
+      </view>
+      <view class="section">
+        <view class="section-left">
+          <image src="../../template/image/index3.png"></image>
+          <text id="17">护理用品</text>
+        </view>
+        <view class="section-right">
+          <text id="18">便盆</text>
+          <text id="19">便椅</text>
+          <text id="20">尿壶</text>
+          <text id="21">背垫</text>
+          <text id="22">床垫</text>
+
+          <text id="23">\n医用翻身垫</text>
+          <text id="24">换药护理包</text>
+          <text id="25">导尿包</text>
+
+          <text id="26">\n导尿管</text>
+          <text id="27">引流袋</text>
+          <text id="28">医用垃圾袋</text>
+        </view>
+      </view>
+      <view class="section">
+        <view class="section-left">
+          <image src="../../template/image/index4.png"></image>
+          <text>康复专区</text>
+        </view>
+        <view class="section-right">
+          <text>轮椅</text>
+          <text>拐杖</text>
+          <text>手杖</text>
+          <text>护膝</text>
+          <text>腰椎牵引床</text>
+
+          <text>\n颈椎牵引床</text>
+          <text>电子诊疗仪</text>
+          <text>\n音频治疗仪</text>
+
+          <text>中药熏蒸床</text>
+        </view>
+      </view>
+      <view class="section">
+        <view class="section-left">
+          <image src="../../template/image/index5.png"></image>
+          <text>医疗美容</text>
+        </view>
+        <view class="section-right">
+          <text>美容治疗仪</text>
+          <text>声波洁面仪</text>
+          <text>提拉仪</text>
+
+          <text>\n祛痘刷头</text>
+          <text>蒸脸器</text>
+        </view>
+      </view>
+  
+  </view>
+  <view class="buttom"></view>
+</view>

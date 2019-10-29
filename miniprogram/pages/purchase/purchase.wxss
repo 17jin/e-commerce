@@ -1,0 +1,102 @@
+.back{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -100;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.top-search{
+  width: 590rpx;
+  height: 74rpx;
+  border: 2rpx solid cornflowerblue;
+  align-content: center;
+  top: 26rpx;
+  border-radius: 25rpx;
+  background-color: #f7f7f7;
+  left: 80rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.top image{
+  border-radius: 2px;
+  align-content: center;
+  width:38rpx;
+  height: 38rpx;
+  top: 44rpx;
+  position: relative;
+  right: 495rpx;
+  z-index: 3;
+}
+.inputp{
+  left: 60rpx;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+}
+.textstyle{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  flex-wrap: wrap; 
+}
+.path{
+  /*margin-left: 18rpx;
+  position: relative;*/
+  position: relative;
+  width: 340rpx;
+  height: 430rpx;
+}
+.background{
+  width: 300rpx;
+  height: 390rpx;
+  border-radius: 20rpx;
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+  border: 1rpx solid #dfdada;
+  z-index: 1;
+  background-color: #edf1fa;
+}
+
+.list_img{
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 20rpx;
+  z-index: 2;
+  position: relative;
+  left: 72rpx;
+  top: -380rpx;
+ 
+}
+
+.list_name{
+  z-index: 3;
+  font-size: 30rpx;
+  position: relative;
+  top:-375rpx;
+  left: 90rpx;
+  display: flex;
+  flex-direction: column;
+}
+.list_price{
+  z-index: 3;
+  font-size: 25rpx;
+  position: relative;
+  top:-375rpx;
+  left: 90rpx;
+  color: #407ce3;
+}

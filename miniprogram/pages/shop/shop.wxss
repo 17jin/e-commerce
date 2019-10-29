@@ -1,0 +1,168 @@
+
+.back{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -10;
+}
+/*.header{
+  position: relative;
+  height: 50rpx;
+  padding-top: 15rpx;
+}*/
+.edit{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.edit_btn{
+  font-size: 30rpx;
+  color: #666666;
+  padding-left: 25rpx;
+}
+.share_btn{
+  font-size: 30rpx;
+  color: #666666;
+  padding-left: 40rpx;
+  
+}
+.list{
+  position:relative;
+  width:100%;
+  height: 330rpx;
+  border-bottom: 1rpx solid #c5d4f8;
+  background-color: #ebf1fa;
+}
+.big_name{
+  position: relative;
+  font-size: 32rpx;
+  left: 70rpx;
+  top:10rpx;
+
+}
+.radio_chek{
+  position:absolute;
+  left:10rpx;
+  top:160rpx;
+  width: 40rpx;
+  height:40rpx;
+}
+.radio_chek1{
+  position:absolute;
+  top: 20rpx;
+  left:10rpx;
+  width: 40rpx;
+  height:40rpx;
+}
+.list_img{
+  position: absolute;
+  top:70rpx;
+  left:70rpx;
+  width: 250rpx;
+  height: 250rpx;
+}
+
+/*标题*/
+.list_name{
+  position: absolute;
+  left: 350rpx;
+  top: 65rpx;
+  width: 380rpx;
+  font-size: 28rpx;
+}
+/*规格*/
+.cart_g_name{
+  position: absolute;
+  left: 350rpx;
+  top: 145rpx;
+  color: #666666;
+  font-size: 22rpx;
+  width: 380rpx;
+}
+/*收藏*/
+.collert_img{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+}
+/*价格*/
+.list_price{
+  position: absolute;
+  left: 350rpx;
+  top:185rpx;
+  color:#407ce3;
+}
+
+/*数量加减*/
+.carts-num{
+  position: absolute;
+  left: 490rpx;
+  top:185rpx;
+}
+.minus{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: #e5e5e5;
+  
+}
+.view_text_center{
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+  background-color: #ffffff;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+.plus{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: #ffffff;
+}
+/*数量加减*/
+
+/*删除*/
+.dele_edit{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  top:220rpx;
+  left: 670rpx;
+}
+
+/*底部栏全选*/
+.cont_bot{
+  background-color: #ffffff;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 2rpx solid #ebf1fa;
+}
+.cont_bot image{
+  left:15rpx;
+  width: 40rpx;
+  height:40rpx;
+}
+/*全选*/
+.sel_count_name{
+  font-size: 30rpx;
+  color: #e5e5e5;
+}
+.count_price{
+  font-size: 40rpx;
+  padding-left: 180rpx;
+}
+.topri{
+  color: #407ce3;
+  font-size: 40rpx;
+}
+.submit{
+  position: fixed;
+  color: #ffffff;
+  font-size: 37rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: #407ce3;
+  right: 0;
+}
+/*底部栏全选*/
